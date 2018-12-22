@@ -14,7 +14,10 @@ $source /etc/profile
 
 
 ## SSH安装设置
+
 查看当前IP： ifconfig
+
+首先更新源：sudo apt-get update
 
 查看是否安装SSH： ssh localhost
 
@@ -24,9 +27,32 @@ $source /etc/profile
 
 启动： SSH:  service ssh start
 
-SSH配置:   sido  gedit /etc/ssh/sshd_config
+SSH配置:   sido  gedit /etc/ssh/sshd_config 
 
-PermitRootLogin prohibit-password，加上#注释
+数据传输：http://www.cnblogs.com/asyang1/p/9467646.html
 
-在后边加上一句：PermitRootLogin  yes,然后保存
+1、配置ssh-server，配置文件位于/etc/ssh/sshd_config，默认端口为22，为了安全，一般自定义为其他端口）
 
+2、PermitRootLogin prohibit-password，加上#注释，在后边加上一句：PermitRootLogin  yes,然后保存
+
+重启：sudo /etc/init.d/ssh resart
+
+## 解决E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
+
+输入：
+
+sudo rm /var/cache/apt/archives/lock
+
+sudo rm /var/lib/dpkg/lock
+
+无效则输入：
+
+sudo rm /var/lib/dpkg/lock
+
+sudo rm /var/lib/dpkg/lock
+
+sudo dpkg --configure -a
+
+## 在线安装 JDK JRE OpenJDK Oracle JDK
+
+https://linux.cn/article-3792-1.html

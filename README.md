@@ -57,7 +57,7 @@ sudo dpkg --configure -a
 
 https://linux.cn/article-3792-1.html
 
-##Permission denied, please try again. 解决办法
+## Permission denied, please try again. 解决办法
 
 修改/etc/ssh/sshd_config文件中PermitRootLogin。
 

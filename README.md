@@ -56,3 +56,9 @@ sudo dpkg --configure -a
 ## 在线安装 JDK JRE OpenJDK Oracle JDK
 
 https://linux.cn/article-3792-1.html
+
+##Permission denied, please try again. 解决办法
+
+修改/etc/ssh/sshd_config文件中PermitRootLogin。
+
+PermitRootLogin without-password >> PermitRootLogin Yes

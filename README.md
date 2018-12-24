@@ -1,6 +1,6 @@
 ﻿# Linux Environment Configuration
 
-## 添加JAVA环境，修改profile
+## 添加 JAVA 环境，修改 profile
 
 $sudo gedit /etc/profile
 
@@ -13,7 +13,7 @@ $source /etc/profile
 
 
 
-## SSH安装设置
+## SSH 安装设置
 
 查看当前IP： ifconfig
 
@@ -37,7 +37,7 @@ SSH配置:   sido  gedit /etc/ssh/sshd_config
 
 重启：sudo /etc/init.d/ssh resart
 
-## 解决E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
+## 解决 E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
 
 输入：
 

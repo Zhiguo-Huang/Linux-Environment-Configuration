@@ -61,4 +61,8 @@ https://linux.cn/article-3792-1.html
 
 修改/etc/ssh/sshd_config文件中PermitRootLogin。
 
-PermitRootLogin without-password >> PermitRootLogin Yes
+PermitRootLogin without-password >> PermitRootLogin Yes   
+
+## Ubuntu 提示sudo: java: command not found解决办法     
+https://www.cnblogs.com/luminousjj/p/8308759.html
+

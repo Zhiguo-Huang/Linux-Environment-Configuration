@@ -66,3 +66,22 @@ PermitRootLogin without-password >> PermitRootLogin Yes
 ## Ubuntu 提示sudo: java: command not found解决办法     
 https://www.cnblogs.com/luminousjj/p/8308759.html
 
+
+alluxio.master.hostname=10.10.10.131
+alluxio.underfs.address=hdfs://10.10.10.10.131:9000/alluxio/root/
+alluxio.master.journal.forlder=hdfs://10.10.10.131:9000/alluxio/journal/
+
+alluxio.zookeeper.enabled=true
+alluxio.zookeeper.address=[10.10.10.131]:2181,[10.10.10.135]:2181,[10.10.10.136]:2181
+
+
+tickTime=2000
+dataDir=/home/alluxio1031/zookeeper/data
+dataLogDir=/home/alluxio1031/zookeeper/logs
+clientPort=2181
+initLimit=5
+syncLimit=2
+server.1=10.10.10.136:2181
+server.2=10.10.10.131:2181
+server.3=10.10.10.135:2181
+

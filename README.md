@@ -98,11 +98,11 @@ sudo(选项)(参数)
         然后添加一行，获取root权限   
 　　qie  ALL=(ALL)  ALL   （qie是我的用户名）     
         修改完毕，现在可以用qie帐号登录，然后用命令 sudo(选项)(参数) ，即可获得临时root权限进行操作。   
- ps:这里说下你可以sudoers添加下面四行中任意一条 
-    qie            ALL=(ALL)                ALL 
-    %qie           ALL=(ALL)                ALL   
-    qie            ALL=(ALL)                NOPASSWD: ALL   
-    %qie           ALL=(ALL)                NOPASSWD: ALL   
+ ps:这里说下你可以sudoers添加下面四行中任意一条     
+    qie            ALL=(ALL)                ALL    
+    %qie           ALL=(ALL)                ALL       
+    qie            ALL=(ALL)                NOPASSWD: ALL      
+    %qie           ALL=(ALL)                NOPASSWD: ALL      
 第一行:允许用户qie执行sudo命令(需要输入密码).      
 第二行:允许用户组qie里面的用户执行sudo命令(需要输入密码).      
 第三行:允许用户qie执行sudo命令,并且在执行的时候不输入密码.      

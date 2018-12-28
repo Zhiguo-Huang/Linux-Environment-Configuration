@@ -85,3 +85,29 @@ server.1=10.10.10.136:2181
 server.2=10.10.10.131:2181      
 server.3=10.10.10.135:2181      
 
+##  ubuntu提升管理员权限的办法    
+ 
+     sudo命令用来以其他身份来执行命令，预设的身份为root。在/etc/sudoers中设置了可执行sudo指令的用户。若其未经授权的用户企图使用sudo，则会发出警告的邮件给管理员。用户使用sudo时，必须先输入密码，之后有5分钟的有效期限，超过期限则必须重新输入密码。 
+   
+###  语法   
+sudo(选项)(参数)    
+例如：sudo passwd root   #修改root密码    
+###  赋予普通用户root权限：
+修改 /etc/sudoers 文件，找到下面一行，##Allows people in group wheel to run all commands    
+        root ALL=(ALL) ALL    
+        然后添加一行，获取root权限   
+　　qie  ALL=(ALL)  ALL   （qie是我的用户名）     
+        修改完毕，现在可以用qie帐号登录，然后用命令 sudo(选项)(参数) ，即可获得临时root权限进行操作。   
+ ps:这里说下你可以sudoers添加下面四行中任意一条 
+    qie            ALL=(ALL)                ALL 
+    %qie           ALL=(ALL)                ALL   
+    qie            ALL=(ALL)                NOPASSWD: ALL   
+    %qie           ALL=(ALL)                NOPASSWD: ALL   
+第一行:允许用户qie执行sudo命令(需要输入密码).      
+第二行:允许用户组qie里面的用户执行sudo命令(需要输入密码).      
+第三行:允许用户qie执行sudo命令,并且在执行的时候不输入密码.      
+第四行:允许用户组qie里面的用户执行sudo命令,并且在执行的时候不输入密码.      
+https://blog.csdn.net/q290994/article/details/77448626
+
+
+

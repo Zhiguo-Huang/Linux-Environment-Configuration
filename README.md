@@ -27,7 +27,7 @@ $source /etc/profile
 
 启动： SSH:  service ssh start
 
-SSH配置:   sido  gedit /etc/ssh/sshd_config 
+SSH配置:   sudo  gedit /etc/ssh/sshd_config 
 
 数据传输：http://www.cnblogs.com/asyang1/p/9467646.html
 

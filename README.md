@@ -67,6 +67,9 @@ PermitRootLogin without-password >> PermitRootLogin Yes
 https://www.cnblogs.com/luminousjj/p/8308759.html
 
 
+
+## Alluxio Zookeeper 配置
+
 alluxio.master.hostname=10.10.10.131    
 alluxio.underfs.address=hdfs://10.10.10.10.131:9000/alluxio/root/    
 alluxio.master.journal.forlder=hdfs://10.10.10.131:9000/alluxio/journal/     

@@ -114,5 +114,7 @@ sudo(选项)(参数)
 第四行:允许用户组qie里面的用户执行sudo命令,并且在执行的时候不输入密码.      
 https://blog.csdn.net/q290994/article/details/77448626
 
+## Hadoop配置
 
+https://blog.csdn.net/sinat_25943197/article/details/81700842
 

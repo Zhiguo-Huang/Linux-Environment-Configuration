@@ -11,7 +11,7 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 $source /etc/profile
 
-
+  
 
 ## SSH 安装设置
 

@@ -11,6 +11,9 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 $source /etc/profile
 
+## ZooKeeper    
+
+https://blog.csdn.net/u014394255/article/details/53980656   
   
 
 ## SSH 安装设置

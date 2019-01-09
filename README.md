@@ -37,6 +37,8 @@ SSH配置:   sudo  gedit /etc/ssh/sshd_config
 
 重启：sudo /etc/init.d/ssh resart
 
+SSH免密匙登陆注意事项：SSH文件夹权限700  authorized_keys文件权限600（chmod）  所属用户均为root用户(chown指令 sudo chown root:root /root/.ssh/你的文件)
+
 ## 解决 E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
 
 输入：

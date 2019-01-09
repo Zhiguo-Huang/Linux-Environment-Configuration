@@ -116,5 +116,7 @@ https://blog.csdn.net/q290994/article/details/77448626
 
 ## Hadoop配置
 
-https://blog.csdn.net/sinat_25943197/article/details/81700842
+https://blog.csdn.net/sinat_25943197/article/details/81700842   
+https://blog.csdn.net/dream_an/article/details/80258283   
+https://blog.csdn.net/u010366748/article/details/82843454#comments    
 

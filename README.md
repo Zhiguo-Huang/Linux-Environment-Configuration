@@ -62,16 +62,14 @@ SSH免密匙登陆注意事项：SSH文件夹权限700  authorized_keys文件权
 
 ## 解决 E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
 
-输入：
+输入：   
+`sudo rm /var/cache/apt/archives/lock`      
+`sudo rm /var/lib/dpkg/lock`      
 
-`sudo rm /var/cache/apt/archives/lock`
-`sudo rm /var/lib/dpkg/lock`
-
-无效则输入：
-
-`sudo rm /var/lib/dpkg/lock`
-`sudo rm /var/lib/dpkg/lock`
-`sudo dpkg --configure -a`
+无效则输入：    
+`sudo rm /var/lib/dpkg/lock`    
+`sudo rm /var/lib/dpkg/lock`    
+`sudo dpkg --configure -a`    
 
 ## 在线安装 JDK JRE OpenJDK Oracle JDK
 

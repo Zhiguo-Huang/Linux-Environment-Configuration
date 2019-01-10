@@ -1,8 +1,8 @@
 
 # Linux Environment Configuration
 
-* [Java](添加JAVA环境，修改profile。)
-* [SHH](ssh-安装设置)
+* [Java](#添加JAVA环境，修改profile。)
+* [SHH](#ssh-安装设置)
 * [Hadoop](#Hadoop配置)
 
 ## 添加JAVA环境，修改profile。

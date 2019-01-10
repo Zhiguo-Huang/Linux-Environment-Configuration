@@ -5,7 +5,7 @@
 $sudo gedit /etc/profile
 ```
 ```
-export JAVA_HOME=/usr/local/jdk1.8.0_144
+export JAVA_HOME=/usr/local/jdk1.8.0_144  #在这里设置jdk解压文件路径
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export PATH=${JAVA_HOME}/bin:$PATH
@@ -15,14 +15,9 @@ $source /etc/profile
 ```
 ## ZooKeeper    
 
-<<<<<<< HEAD
 https://blog.csdn.net/u014394255/article/details/53980656   
-=======
-## ZooKeeper    
 
-https://blog.csdn.net/u014394255/article/details/53980656   
-  
->>>>>>> fd79939cdf8ac40bcfbf0fc5e8e36e2280cad09d
+
 
 ## SSH 安装设置
 
@@ -43,8 +38,8 @@ https://blog.csdn.net/u014394255/article/details/53980656
 
 SSH配置: ```  sudo  gedit /etc/ssh/sshd_config```
 =======
-SSH配置:   sudo  gedit /etc/ssh/sshd_config 
->>>>>>> fd79939cdf8ac40bcfbf0fc5e8e36e2280cad09d
+SSH配置:   sudo  gedit /etc/ssh/sshd_config
+
 
 数据传输：http://www.cnblogs.com/asyang1/p/9467646.html
 
@@ -96,7 +91,6 @@ PermitRootLogin without-password >> PermitRootLogin Yes
 https://www.cnblogs.com/luminousjj/p/8308759.html
 
 
-<<<<<<< HEAD
 
 ## Alluxio Zookeeper 配置
 
@@ -144,8 +138,6 @@ sudo(选项)(参数)
 第四行:允许用户组qie里面的用户执行sudo命令,并且在执行的时候不输入密码.      
 https://blog.csdn.net/q290994/article/details/77448626
 
-## Hadoop配置
-=======
 
 ## Alluxio Zookeeper 配置
 
@@ -168,11 +160,11 @@ server.2=10.10.10.131:2181
 server.3=10.10.10.135:2181      
 
 ##  ubuntu提升管理员权限的办法    
- 
-   
-     
-sudo命令用来以其他身份来执行命令，预设的身份为root。在/etc/sudoers中设置了可执行sudo指令的用户。若其未经授权的用户企图使用sudo，则会发出警告的邮件给管理员。用户使用sudo时，必须先输入密码，之后有5分钟的有效期限，超过期限则必须重新输入密码。 
-     
+
+
+
+sudo命令用来以其他身份来执行命令，预设的身份为root。在/etc/sudoers中设置了可执行sudo指令的用户。若其未经授权的用户企图使用sudo，则会发出警告的邮件给管理员。用户使用sudo时，必须先输入密码，之后有5分钟的有效期限，超过期限则必须重新输入密码。
+
 ###  语法   
 sudo(选项)(参数)    
 例如：sudo passwd root   #修改root密码    
@@ -194,11 +186,6 @@ sudo(选项)(参数)
 https://blog.csdn.net/q290994/article/details/77448626
 
 ## Hadoop配置
-
-https://blog.csdn.net/sinat_25943197/article/details/81700842   
-https://blog.csdn.net/dream_an/article/details/80258283   
-https://blog.csdn.net/u010366748/article/details/82843454#comments    
->>>>>>> fd79939cdf8ac40bcfbf0fc5e8e36e2280cad09d
 
 https://blog.csdn.net/sinat_25943197/article/details/81700842   
 https://blog.csdn.net/dream_an/article/details/80258283   

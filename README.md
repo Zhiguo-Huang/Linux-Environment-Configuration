@@ -28,19 +28,19 @@ https://blog.csdn.net/u014394255/article/details/53980656
 
 ## SSH 安装设置
 
-查看当前IP： ```ifconfig```
+查看当前IP： `ifconfig`
 
-首先更新源：```sudo apt-get update```
+首先更新源：`sudo apt-get update`
 
-查看是否安装SSH： ```ssh localhost```
+查看是否安装SSH： `ssh localhost`
 
-安装： ```sudo apt-get install openssh-server```
+安装： `sudo apt-get install openssh-server`
 
-启动之前检查：``` ps -e | grep ssh``` (出现sshd则安装成功)
+启动之前检查：` ps -e | grep ssh` (出现sshd则安装成功)
 
-启动：``` SSH:  service ssh start```
+启动：` SSH:  service ssh start`
 
-SSH配置: ```  sudo  gedit /etc/ssh/sshd_config```
+SSH配置: `  sudo  gedit /etc/ssh/sshd_config`
 
 
 
@@ -62,24 +62,21 @@ SSH免密匙登陆注意事项：SSH文件夹权限700  authorized_keys文件权
 免密匙登陆：    
 https://www.cnblogs.com/ivan0626/p/4144277.html   
 `ssh-keygen -t rsa`
-cat id_rsa.pub >> authorized_keys
-SSH免密匙登陆注意事项：SSH文件夹权限700  authorized_keys文件权限600（chmod）  所属用户均为root用户(chown指令 sudo chown root:root /root/.ssh/你的文件)
+`cat id_rsa.pub >> authorized_keys`
+SSH免密匙登陆注意事项：SSH文件夹权限700  `authorized_keys`文件权限`600（chmod`  所属用户均为root用户(chown指令 sudo chown root:root /root/.ssh/你的文件)
 
 ## 解决 E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
 
 输入：
 
-sudo rm /var/cache/apt/archives/lock
-
-sudo rm /var/lib/dpkg/lock
+`sudo rm /var/cache/apt/archives/lock`
+`sudo rm /var/lib/dpkg/lock`
 
 无效则输入：
 
-sudo rm /var/lib/dpkg/lock
-
-sudo rm /var/lib/dpkg/lock
-
-sudo dpkg --configure -a
+`sudo rm /var/lib/dpkg/lock`
+`sudo rm /var/lib/dpkg/lock`
+`sudo dpkg --configure -a`
 
 ## 在线安装 JDK JRE OpenJDK Oracle JDK
 

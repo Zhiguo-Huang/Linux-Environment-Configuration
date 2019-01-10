@@ -1,8 +1,10 @@
-﻿# Linux Environment Configuration
+
+# Linux Environment Configuration
 
 ## 添加JAVA环境，修改profile。
 ```
 $sudo gedit /etc/profile
+$sudo vim /etc/profile  
 ```
 ```
 export JAVA_HOME=/usr/local/jdk1.8.0_144  #在这里设置jdk解压文件路径
@@ -13,15 +15,13 @@ export PATH=${JAVA_HOME}/bin:$PATH
 ```
 $source /etc/profile
 ```
-## ZooKeeper    
+## ZooKeeper设置    
 
 https://blog.csdn.net/u014394255/article/details/53980656   
 
 
 
 ## SSH 安装设置
-
-
 
 查看当前IP： ```ifconfig```
 
@@ -37,7 +37,6 @@ https://blog.csdn.net/u014394255/article/details/53980656
 
 SSH配置: ```  sudo  gedit /etc/ssh/sshd_config```
 
-SSH配置:   sudo  gedit /etc/ssh/sshd_config
 
 
 数据传输：http://www.cnblogs.com/asyang1/p/9467646.html

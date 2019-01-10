@@ -53,9 +53,11 @@ SSH配置: `  sudo  gedit /etc/ssh/sshd_config`
 重启：`sudo /etc/init.d/ssh resart`
 
 免密匙登陆：    
-https://www.cnblogs.com/ivan0626/p/4144277.html   
-`ssh-keygen -t rsa`     
-`cat id_rsa.pub >> authorized_keys`     
+https://www.cnblogs.com/ivan0626/p/4144277.html
+
+`ssh-keygen -t rsa`
+
+`cat id_rsa.pub >> authorized_keys`  
 
 SSH免密匙登陆注意事项：SSH文件夹权限700  authorized_keys文件权限600（chmod）  所属用户均为root用户(chown指令 sudo chown root:root /root/.ssh/你的文件)
 

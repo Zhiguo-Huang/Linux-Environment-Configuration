@@ -6,17 +6,17 @@
 * [Hadoop](#Hadoop配置)
 
 ## 添加JAVA环境，修改profile。
-```
+```java
 $sudo gedit /etc/profile
 $sudo vim /etc/profile  
 ```
-```
+```java
 export JAVA_HOME=/usr/local/jdk1.8.0_144  #在这里设置jdk解压文件路径
 export JRE_HOME=${JAVA_HOME}/jre
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export PATH=${JAVA_HOME}/bin:$PATH
 ```
-```
+```java
 $source /etc/profile
 ```
 
@@ -190,7 +190,7 @@ https://blog.csdn.net/u010366748/article/details/82843454#comments
 ## Python提取文件夹下所有文件名
 ```python
 import os
-for a,b,c in os.walk(r'D:\迅雷下载\推理小说\推理小说'):
+for a,b,c in os.walk(r'F:file_dir'):
     print(a)           #路径名
     print(b)           #当前路径下的文件夹名字  
     print(c)           #当前路径下的文件名字 

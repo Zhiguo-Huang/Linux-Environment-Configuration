@@ -188,7 +188,7 @@ https://blog.csdn.net/dream_an/article/details/80258283
 https://blog.csdn.net/u010366748/article/details/82843454#comments    
 
 ## Python提取文件夹下所有文件名
-```
+```python
 import os
 for a,b,c in os.walk(r'D:\迅雷下载\推理小说\推理小说'):
     print(a)           #路径名

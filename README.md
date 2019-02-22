@@ -186,3 +186,15 @@ https://blog.csdn.net/q290994/article/details/77448626
 https://blog.csdn.net/sinat_25943197/article/details/81700842   
 https://blog.csdn.net/dream_an/article/details/80258283   
 https://blog.csdn.net/u010366748/article/details/82843454#comments    
+
+## Python提取文件夹下所有文件名
+```
+import os
+for a,b,c in os.walk(r'D:\迅雷下载\推理小说\推理小说'):
+    print(a)           #路径名
+    print(b)           #当前路径下的文件夹名字  
+    print(c)           #当前路径下的文件名字 
+for i in c:
+    print(i)
+```
+
